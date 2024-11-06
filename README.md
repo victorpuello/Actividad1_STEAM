@@ -28,8 +28,9 @@ Para instalar y ejecutar este proyecto, sigue estos pasos:
     ```bash
    cd tu-repositorio
 3.  Instala las dependencias del proyecto (asegúrate de tener Node.js instalado):
+   
     ```bash
-   npm install
+    npm install
 Asegúrate de que los archivos model.json y metadata.json de Teachable Machine están en la ruta correcta (tm_model/), ya que estos archivos contienen el modelo de clasificación.
 
 ## Uso
