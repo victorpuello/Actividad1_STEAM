@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación Escolar con Teachable Machine</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        video {
+            margin: 20px 0;
+        }
+        h1 {
+            color: #333;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        canvas {
+            margin-top: 20px;
+            max-width: 80%;
+        }
+        #alert-container {
+            display: none; /* Oculto por defecto */
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Votación Escolar con Teachable Machine</h1>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+    
+    <!-- Contenedor para la alerta de voto -->
+    <div id="alert-container"></div>
+    
+    <div id="results">
+        <h2>Resultados de la Votación</h2>
+        <div id="results-container"></div>
+    </div>
+    <canvas id="resultsChart"></canvas> <!-- Canvas para el gráfico de barras -->
+    <script src="tm_integration.js" defer></script>
+</body>
+</html>
