@@ -25,32 +25,33 @@ Para instalar y ejecutar este proyecto, sigue estos pasos:
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
 2. Navega al directorio del proyecto:
-
-cd tu-repositorio
-
-Instala las dependencias del proyecto (asegúrate de tener Node.js instalado):
-npm install
+    ```bash
+   cd tu-repositorio
+3.  Instala las dependencias del proyecto (asegúrate de tener Node.js instalado):
+    ```bash
+   npm install
 Asegúrate de que los archivos model.json y metadata.json de Teachable Machine están en la ruta correcta (tm_model/), ya que estos archivos contienen el modelo de clasificación.
 
-Uso
-Abre el archivo index.html en tu navegador web.
-Permite el acceso a la cámara para que la aplicación pueda hacer el reconocimiento.
-Observa cómo se registran los votos automáticamente cuando se detectan las imágenes correspondientes.
-Los resultados de la votación se mostrarán en tiempo real en un gráfico de barras.
+## Uso
+- Abre el archivo index.html en tu navegador web.
+- Permite el acceso a la cámara para que la aplicación pueda hacer el reconocimiento.
+- Observa cómo se registran los votos automáticamente cuando se detectan las imágenes correspondientes.
+- Los resultados de la votación se mostrarán en tiempo real en un gráfico de barras.
 
-Características
-Votación Automática: El sistema registra automáticamente los votos cuando detecta una imagen correspondiente a un candidato.
-Alerta de Confirmación de Voto: Al registrar un voto, aparece un mensaje de confirmación que se cierra automáticamente después de 5 segundos.
-Bloqueo de Nuevos Votos Durante la Alerta: Mientras la alerta de confirmación está activa, no se pueden registrar nuevos votos.
-Gráfico de Resultados en Tiempo Real: Un gráfico de barras se actualiza en tiempo real para mostrar los votos acumulados para cada candidato.
-Configuración de Teachable Machine
+## Características
+- **Votación Automática**: El sistema registra automáticamente los votos cuando detecta una imagen correspondiente a un candidato.
+- **Alerta de Confirmación de Voto**: Al registrar un voto, aparece un mensaje de confirmación que se cierra automáticamente después de 5 segundos.
+- **Bloqueo de Nuevos Votos Durante la Alerta**: Mientras la alerta de confirmación está activa, no se pueden registrar nuevos votos.
+- **Gráfico de Resultados en Tiempo Real**: Un gráfico de barras se actualiza en tiempo real para mostrar los votos acumulados para cada candidato.
 
-Para adaptar el sistema a tus necesidades:
+## Configuración de Teachable Machine
 
-Entrena un modelo en Teachable Machine para reconocer las imágenes de los candidatos.
-Exporta el modelo y coloca los archivos model.json y metadata.json en la carpeta tm_model/ de este proyecto.
-Contribución
+- **Para adaptar el sistema a tus necesidades**:
+- Entrena un modelo en Teachable Machine para reconocer las imágenes de los candidatos.
+- Exporta el modelo y coloca los archivos model.json y metadata.json en la carpeta tm_model/ de este proyecto.
+
+## Contribución
 Si deseas contribuir, por favor abre un pull request o crea un issue para sugerencias.
 
-Licencia
+## Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
