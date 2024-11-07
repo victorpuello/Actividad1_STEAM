@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación Escolar con Teachable Machine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f7f9fc;
+        }
+        .container {
+            max-width: 700px;
+            margin-top: 30px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        #webcam-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #alert-container {
+            display: none;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #resultsChart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-4">Sistema de Votación Escolar</h1>
+        
+        <!-- Webcam Container -->
+        <div id="webcam-container" class="border rounded bg-light p-3 mb-4 shadow-sm">
+            <video id="webcam" autoplay playsinline width="100%" height="auto"></video>
+        </div>
+        
+        <!-- Label Container -->
+        <div id="label-container" class="mb-4"></div>
+        
+        <!-- Alert Container for vote notifications -->
+        <div id="alert-container" class="alert"></div>
+        
+        <!-- Results Section -->
+        <div id="results">
+            <h2 class="mb-3">Resultados de la Votación</h2>
+            <div id="results-container" class="mb-3"></div>
+            <canvas id="resultsChart"></canvas> <!-- Canvas para el gráfico de barras -->
+        </div>
+    </div>
+    
+    <!-- Custom Script -->
+    <script src="tm_integration.js" defer></script>
+</body>
+</html>

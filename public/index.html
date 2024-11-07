@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Teachable Machine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f9fc;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .card-text {
+            color: #666;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1 class="mb-5">Actividad Teachable Machine Semana 1<br>Curso de Stem para Educadores_24A-2 - Víctor Puello</h1>
+    <p class="lead mb-4">Selecciona una de las aplicaciones para comenzar a explorar:</p>
+    
+    <div class="row">
+        <!-- Proyecto de Imagen: Sistema de Votación -->
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <img src="img/icono3.webp" class="card-img-top" alt="Sistema de Votación">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema de Votación</h5>
+                    <p class="card-text">Una aplicación que utiliza reconocimiento de imagen para contar votos de manera precisa. Ideal para proyectos escolares.</p>
+                    <a href="/votacion" class="btn btn-custom">Ir a Votación</a>
+                    <br><br>
+                    <a href="https://teachablemachine.withgoogle.com/models/tA4HOUjES4/" target="_blank" class="text-primary">Modelo de Imagen en Teachable Machine</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Proyecto de Audio: Evaluación de Speaking -->
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <img src="img/icono2.webp" class="card-img-top" alt="Evaluación de Speaking">
+                <div class="card-body">
+                    <h5 class="card-title">Evaluación de Speaking</h5>
+                    <p class="card-text">Una aplicación que evalúa la pronunciación de palabras en inglés mediante reconocimiento de audio. Perfecta para estudiantes de preescolar.</p>
+                    <a href="/speaking" class="btn btn-custom">Ir a Speaking</a>
+                    <br><br>
+                    <a href="https://teachablemachine.withgoogle.com/models/caPhX2AIr/" target="_blank" class="text-primary">Modelo de Audio en Teachable Machine</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Proyecto de Postura: Lateralidad para Niños -->
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <img src="img/icono1.webp" class="card-img-top" alt="Lateralidad para Niños">
+                <div class="card-body">
+                    <h5 class="card-title">Lateralidad para Niños</h5>
+                    <p class="card-text">Un juego interactivo que ayuda a los niños a aprender la lateralidad (izquierda y derecha) mediante detección de posturas.</p>
+                    <a href="/lateralidad" class="btn btn-custom">Ir a Lateralidad</a>
+                    <br><br>
+                    <a href="https://teachablemachine.withgoogle.com/models/re0Z7Wi9B/" target="_blank" class="text-primary">Modelo de Postura en Teachable Machine</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al repositorio de GitHub -->
+    <div class="mt-5">
+        <a href="https://github.com/victorpuello/Actividad1_STEAM" target="_blank" class="btn btn-secondary">
+            Ver Proyecto en GitHub
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
