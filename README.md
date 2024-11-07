@@ -1,19 +1,33 @@
 # Sistema de Votación Escolar con Teachable Machine
 
-Este proyecto es una aplicación de votación escolar basada en reconocimiento de imágenes. Utiliza Teachable Machine de Google para reconocer a los votantes y clasificar sus votos entre los candidatos especificados. La aplicación muestra en tiempo real los resultados de la votación en un gráfico de barras.
+Este proyecto incluye tres aplicaciones educativas basadas en Teachable Machine: un sistema de votación escolar, una evaluación de pronunciación de números en inglés y un juego de lateralidad. Cada aplicación está diseñada para enseñar a estudiantes de forma interactiva usando reconocimiento de imágenes, audio y posturas.
+
+## Aplicaciones Incluidas
+
+1. **Sistema de Votación Escolar**  
+   Una aplicación que utiliza reconocimiento de imágenes para registrar y clasificar los votos entre los candidatos especificados. Los resultados de la votación se muestran en un gráfico de barras en tiempo real.
+
+2. **Evaluación de Speaking**  
+   Una aplicación de reconocimiento de audio para evaluar la pronunciación de los números del 1 al 10 en inglés, diseñada para estudiantes de preescolar. Al final de la evaluación, se muestra un puntaje basado en el número de aciertos.
+
+3. **Juego de Lateralidad**  
+   Un juego interactivo para enseñar la lateralidad (izquierda y derecha) a estudiantes de preescolar mediante reconocimiento de posturas.
 
 ## Tecnologías Utilizadas
 
 - **Node.js**: Para la estructura del proyecto y la lógica de servidor.
-- **Teachable Machine**: Para el modelo de reconocimiento de imágenes.
-- **TensorFlow.js**: Para ejecutar el modelo de Teachable Machine en el navegador.
+- **Teachable Machine**: Para los modelos de reconocimiento de imágenes, audio y posturas.
+- **TensorFlow.js**: Para ejecutar los modelos de Teachable Machine en el navegador.
 - **Chart.js**: Para visualizar los resultados de la votación en un gráfico de barras.
+- **Bootstrap**: Para una interfaz de usuario intuitiva y responsiva.
 
 ## Estructura del Proyecto
 
-- `index.html`: Página principal del proyecto, donde se integra la webcam, los resultados, y el gráfico.
-- `tm_integration.js`: Script principal para cargar el modelo de Teachable Machine, configurar la webcam, y manejar el proceso de votación.
-- `script.js`: Contiene lógica adicional para el modelo de Teachable Machine.
+- `index.html`: Página principal que permite seleccionar entre las tres aplicaciones.
+- `votacion.html`, `speaking.html`, `lateralidad.html`: Páginas individuales para cada aplicación.
+- `tm_integration.js`: Script para el sistema de votación escolar.
+- `tm_speaking.js`: Script para la evaluación de speaking.
+- `lateralidad_game.js`: Script para el juego de lateralidad.
 - `package.json`: Archivo de configuración de Node.js con las dependencias del proyecto.
 
 ## Instalación
@@ -24,6 +38,7 @@ Para instalar y ejecutar este proyecto, sigue estos pasos:
 
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
+
 2. Navega al directorio del proyecto:
     ```bash
    cd tu-repositorio
